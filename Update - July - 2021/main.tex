@@ -1,0 +1,325 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{fontawesome}
+\usepackage{multicol}
+\usepackage{amssymb}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Nachiket Kanore} \\ \vspace{1pt}
+    B.E. - Computer Engineering - PICT, Pune \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 9359346305 ~ \href{mailto:nachiket.kanore@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{nachiket.kanore@gmail.com}} ~ 
+    \href{https://linkedin.com/in/nachiketkanore}{\raisebox{-0.2\height}\faLinkedin\ \underline{}}
+    \href{https://github.com/nachiketkanore}{\raisebox{-0.2\height}\faGithub\ \underline{}}
+    \href{https://twitter.com/nachiket_kanore}{\raisebox{-0.2\height}\faTwitter\ \underline{}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+
+\begin{tabular}{ |p{4cm}|p{8.2cm}|p{4cm}|p{3.1cm}|  }
+
+ \hline
+ \hfil \textbf{Degree/Certificate} & \hfil \textbf{Institute/Board} & \hfil \textbf{CGPA/Percentage} & \hfil \textbf{Year}\\
+ \hline
+ \hfil {\footnotesize B. E.} & \hfil {\footnotesize Pune Institute of Computer Technology, Pune} & \hfil {\footnotesize 9.3 (Current)}& \hfil {\footnotesize 2018 - Present}\\
+ \hfil {\footnotesize Senior Secondary} & \hfil {\footnotesize State Board}  & \hfil {\footnotesize 86\%} & \hfil {\footnotesize 2018}\\
+ \hfil {\footnotesize Secondary} & \hfil {\footnotesize State Board}  & \hfil {\footnotesize 95\%} & \hfil {\footnotesize 2016}\\
+ \hline
+\end{tabular}
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+% Experience - 1
+    \resumeSubheading
+      {InterviewMocha}{May 2020 -- Present}
+      {Problem Setting Intern}{Pune, MH}
+      \resumeItemListStart
+        \resumeItem{Prepared problems based on Data Structures and Algorithms of varying difficulties along with test cases generation.}
+        \resumeItem{Curated questions based on Python, C++, Web Technology and Data Science.}
+      \resumeItemListEnd
+
+% Experience - 2
+    \resumeSubheading
+      {HackerRank, CodeChef
+        \href{https://www.codechef.com/CODL2021}{\raisebox{-0.2\height}\faExternalLink\ \underline{}}
+        \href{https://www.hackerrank.com/shortest-code-challenge}{\raisebox{-0.2\height}\faExternalLink\ \underline{}}
+        \href{https://www.hackerrank.com/pasc-dp}{\raisebox{-0.2\height}\faExternalLink\ \underline{}}
+        % \href{https://github.com/nachiketkanore/shortest_code_challenge}{\raisebox{-0.2\height}\faGithub\ \underline{}}
+      }{Aug 2020 -- Present}
+      {Problem Setting - External Contributor}{Freelance}
+      \resumeItemListStart
+        \resumeItem{Prepared multiple competitive programming competitions on these platforms based on math, dynamic programming and algorithms in general. More than 1000 participants worldwide competed in these events.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    
+    % Project 1
+    \resumeProjectHeading
+          {\textbf{Real-time Document Collaboration} $|$ \emph{React, Node.js, Socket.io}
+          \href{https://github.com/nachiketkanore/realtime-document-collaboration}{\raisebox{-0\height}\faGithub}
+          }{March 2021}
+          \resumeItemListStart
+            \resumeItem{Real-time text editor for editing and sharing documents across multiple users.}
+            \resumeItem{Maintains documents in \textit{MongoDB} database for persistent contents across different links.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+    % Project 2
+          \resumeProjectHeading
+          {\textbf{Flashcard Quiz App} $|$ \emph{React, JavaScript, API}
+          \href{https://github.com/nachiketkanore/flashcard-quiz}{\raisebox{-0\height}\faGithub}
+          \href{http://weary-mist.surge.sh/}{\raisebox{-0\height}\faGlobe}
+          }{November 2020}
+          \resumeItemListStart
+            \resumeItem{Dynamic flashcard quizzes web application for practicing general knowledge quizzes on different topics.}
+            \resumeItem{Highly responsive UI for different screen sizes. Used OpenTDB API for importing quizzes.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+    % Project 3
+          \resumeProjectHeading
+          {\textbf{Snake Game AI Bot} $|$ \emph{PyTorch, PyGame, Reinforcement Learning}
+          \href{https://github.com/nachiketkanore/AI-ML/tree/main/snake-ai-bot}{\raisebox{-0\height}\faGithub}
+          }{January 2021}
+          \resumeItemListStart
+            \resumeItem{Implemented and trained AI bot to learn to play the classic Snake game.}
+            \resumeItem{Used Deep Neural Network to train the Agent to achieve top score within 100 turns. }
+            \resumeItem{Implemented the Snake Game interface using PyGame and tracked progress with learning curve.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+    
+    % Project 4
+      \resumeProjectHeading
+          {\textbf{Document Scanner App} $|$ \emph{Python, OpenCV} \href{https://github.com/nachiketkanore/document-scanner}{\raisebox{-0\height}\faGithub}
+          }{July 2020}
+          \resumeItemListStart
+            \resumeItem{ Extract document from image by applying transformations to increase readability and improve quality. }
+          \resumeItemListEnd
+
+          
+    \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+%-------------ACHIEVEMENTS SECTION------------------
+
+\section{Achievements}
+    \resumeSubHeadingListStart
+        \resumeItemListStart
+            \resumeItem{
+            CodeChef \href{https://www.codechef.com/users/nachiketkanore}{\raisebox{-0.2\height}\faExternalLink} Rated \textbf{5}$\bigstar$ (Max. Rating - 2105) - Achieved \textbf{Global Rank 21} in CodeChef December Cook-Off 2019 \href{https://www.codechef.com/rankings/COOK113B}{\raisebox{-0.2\height}\faExternalLink}
+            }
+            \resumeItem{
+            Codeforces \href{https://codeforces.com/profile/NachiketK}{\raisebox{-0.2\height}\faExternalLink} Rated \textbf{Expert} - Solved more than 1500 problems on this site.
+            }
+            \resumeItem{
+            Google Kick Start Round D 2020 - Achieved \textbf{Global Rank 621} among more than 10K participants.
+            }
+            \resumeItem{
+            \textbf{ACM ICPC 2019} - Ranked 130 in Preliminary Online Round (Kanpur) \href{https://icpc.global/ICPCID/G14IN3CN2ECD}{\raisebox{-0.2\height}\faExternalLink}
+            }
+            \resumeItem{
+            Achieved \textbf{Rank 2} in Just Code It 4.0 coding round held by AOT college on CodeChef \href{https://www.codechef.com/rankings/JCI42021}{\raisebox{-0.2\height}\faExternalLink}
+            }
+            \resumeItem{
+            Achieved \textbf{Rank 10} in Encoding December challenge on CodeChef \href{https://www.codechef.com/rankings/ENDE2020}{\raisebox{-0.2\height}\faExternalLink}
+            }
+            \resumeItem{
+            Project Euler - \textbf{Level 4} with more than 100 solved problems.
+            }
+            \resumeItem{
+            Solved more than 2000 competitive programming problems on various platforms like Codeforces, CodeChef, HackerRank, AtCoder and HackerEarth. \href{https://www.stopstalk.com/user/profile/tekichan}{\raisebox{-0.2\height}\faExternalLink}
+            }
+            \resumeItem{
+            Cleared IIT JEE Advanced (2018) with \textbf{top 5\%} in India.
+            }
+            \resumeItem{
+            Achieved \textbf{Rank 621} in MH-CET (2018) with more than 2 lakh candidates.
+            }
+        \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+
+
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, C++, Python, JavaScript, SQL, Bash} \\
+     \textbf{Tools}{: Vim, VS Code, \LaTeX, Google Colab} \\
+     \textbf{Technologies/Frameworks}{: PyTorch, Linux, React, Git, GitHub} \\
+     \textbf{Additional}{: Data Structures, Algorithms, Deep Learning, Computer Vision} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+
+
+
+% %-----------INVOLVEMENT---------------
+% \section{Positions of Responsibility}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{PICT CodeChef Chapter \href{https://www.linkedin.com/company/codechef-pict-chapter/}{\raisebox{-0.2\height}\faLinkedin}
+%         }
+%         {Spring 2020 -- Present}{President}{PICT, Pune}
+%             \resumeItemListStart
+%                 \resumeItem{My role includes organizing various competitions, workshops, educational sessions for students in college.}
+%                 \resumeItem{Managed executive board of 5 members to enhance competitive programming culture in PICT.}
+%             \resumeItemListEnd
+        
+%     \resumeSubHeadingListEnd
+
+
+    
+% %------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+
+%  \resumeSubHeadingListStart
+%         \resumeItemListStart
+%             \resumeItem{
+%             \textbf{Computer Science} - Data Structures, Algorithms, Database Management Systems, Object Oriented Programming, Advanced Data Structures, Discrete Structures, Graph Theory, Software Development.
+%             }
+%             \resumeItem{
+%             \textbf{Machine Learning} - Neural Networks, Deep Learning, Reinforcement Learning, Deep Learning for Computer Vision.
+%             }
+%         \resumeItemListEnd
+        
+%     \resumeSubHeadingListEnd
+
+\end{document}
